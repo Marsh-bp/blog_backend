@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
@@ -24,4 +23,5 @@ app.use('/api/blogs', blogRoutes);
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 module.exports = app;
